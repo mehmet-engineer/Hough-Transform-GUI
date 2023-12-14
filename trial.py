@@ -3,7 +3,7 @@ from ShapeDetector import ShapeDetector
 
 detector = ShapeDetector()
 
-detector.load_line_image("img_for_lines.png")
+detector.load_line_image("road1.jpeg")
 detector.preprocess_images()
 
 num_lines, plotted_img = detector.detect_lines()
