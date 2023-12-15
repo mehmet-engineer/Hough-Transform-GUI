@@ -15,6 +15,13 @@ class ShapeDetector():
         self.original_line_img = cv2.imread(self.line_img_path)
         self.img_for_lines = self.original_line_img.copy()
         self.img_line_flag = True
+    
+    def get_original_img(self):
+        return self.original_line_img
+    
+    def convert_to_rgb(self, img):
+        new_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        return new_img
 
     def preprocess_images(self):
         
